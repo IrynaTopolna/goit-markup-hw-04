@@ -13,6 +13,7 @@
   --portfolio-element-border: #eeeeee;
   --social-link-color: #afb1b8;
   --social-link-bgc-footer: rgba(255, 255, 255, 0.1);
+  --box-shadow: rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -236,6 +237,7 @@ ul {
 .btn.portfolio:focus {
   color: var(--accent-white);
   background-color: var(--accent-blue);
+  box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
 .flex-button {
@@ -362,10 +364,18 @@ ul {
   margin-right: 30px;
   background-color: var(--accent-white);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
 .flex-team-element:last-child {
   margin-right: 0;
+}
+
+/* ==================EXAMPLES================ */
+
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0px 4px 4px var(--box-shadow);
 }
 
 .examples-title {
@@ -402,13 +412,13 @@ ul {
 
 .social-list-link:hover,
 .social-list-link:focus,
-.join  .social-list-link:hover,
-.join  .social-list-link:focus {
+.join .social-list-link:hover,
+.join .social-list-link:focus {
   color: var(--accent-white);
   background-color: var(--accent-blue);
 }
 
-.join .social-list-link{
+.join .social-list-link {
   color: var(--accent-white);
   background-color: var(--social-link-bgc-footer);
 }
@@ -425,13 +435,13 @@ ul {
 
 /* ==================== CLIENT ==================== */
 
-.client{
+.client {
   display: flex;
   justify-content: center;
   column-gap: 30px;
 }
 
-.client-link{
+.client-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,12 +453,12 @@ ul {
 }
 
 .client-link:hover,
-.client-link:focus{
+.client-link:focus {
   color: var(--accent-blue);
   border: 1px solid var(--accent-blue);
 }
 
-.client-icon{
+.client-icon {
   fill: currentColor;
 }
 
@@ -509,11 +519,13 @@ ul {
   color: var(--accent-blue);
 }
 
-.join{
+.join {
+  width: 206px;
+  height: 80px;
   margin-left: 70px;
 }
 
-.join-title{
+.join-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -522,7 +534,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer-flex{
+.footer-flex {
   display: flex;
   align-items: baseline;
 }
